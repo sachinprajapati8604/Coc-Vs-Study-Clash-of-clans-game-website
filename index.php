@@ -11,29 +11,7 @@
 
     <title>Coc Vs Study</title>
     <link rel="shortcut icon" type="image/jpg" href="image/queen1.png" />
-    <style>
-        .catimg {
-            width: 100%;
-            height: 200px;
-            padding: 5px;
-        }
-
-        /* slider css */
-        .sliderimg img {
-            width: 100%;
-            height: 28rem;
-        }
-
-        @media(max-width:600px) {
-
-            /* slider css */
-            .sliderimg img {
-                width: 100%;
-                height: 22rem;
-            }
-
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -108,11 +86,11 @@ https://link.clashofclans.com/en?action=OpenClanProfile&tag=208LG9J82
         <hr style="background: #000; height:1px; width:95%" class="my-4">
 
         <div class="row">
-            <div class="col-md-4 my-2 ">
+            <div class="col-md-4 my-2 box-shadow-sm">
                 <div class="card mx-auto" style="width: 18rem;">
                     <img src="image/th14.jpg?" class="card-img-top catimg" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Th14</h5>
+                    <div class="card-body townhall">
+                        <h5 class="card-title">Townhall 14</h5>
                         <p class="card-text">Th14 bases links. </p>
                         <a href="th14.php" class="btn btn-primary">Browse Base</a>
                     </div>
@@ -121,8 +99,8 @@ https://link.clashofclans.com/en?action=OpenClanProfile&tag=208LG9J82
             <div class="col-md-4 my-2 ">
                 <div class="card mx-auto" style="width: 18rem;">
                     <img src="image/th13.jpg?" class="card-img-top catimg" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Th13</h5>
+                    <div class="card-body townhall">
+                        <h5 class="card-title">Townhall 13</h5>
                         <p class="card-text">Th13 bases links. </p>
                         <a href="th13.php" class="btn btn-primary">Browse Base</a>
                     </div>
@@ -131,8 +109,8 @@ https://link.clashofclans.com/en?action=OpenClanProfile&tag=208LG9J82
             <div class="col-md-4 my-2 ">
                 <div class="card mx-auto" style="width: 18rem;">
                     <img src="image/th12.jpg?" class="card-img-top catimg" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Th12</h5>
+                    <div class="card-body townhall">
+                        <h5 class="card-title">Townhall 12</h5>
                         <p class="card-text">Th12 bases links. </p>
                         <a href="th12.php" class="btn btn-primary">Browse Base</a>
                     </div>
@@ -141,8 +119,8 @@ https://link.clashofclans.com/en?action=OpenClanProfile&tag=208LG9J82
             <div class="col-md-4 my-2 ">
                 <div class="card mx-auto" style="width: 18rem;">
                     <img src="image/th11.jpg?" class="card-img-top catimg" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Th11</h5>
+                    <div class="card-body townhall">
+                        <h5 class="card-title">Townhall 11</h5>
                         <p class="card-text">Th11 bases links. </p>
                         <a href="th11.php" class="btn btn-primary">Browse Base</a>
                     </div>
@@ -151,8 +129,8 @@ https://link.clashofclans.com/en?action=OpenClanProfile&tag=208LG9J82
             <div class="col-md-4 my-2">
                 <div class="card mx-auto" style="width: 18rem;">
                     <img src="image/th10.jpg?" class="card-img-top catimg" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Th10</h5>
+                    <div class="card-body townhall">
+                        <h5 class="card-title">Townhall 10</h5>
                         <p class="card-text">Th10 bases links. </p>
                         <a href="th10.php" class="btn btn-primary">Browse Base</a>
                     </div>
@@ -160,21 +138,8 @@ https://link.clashofclans.com/en?action=OpenClanProfile&tag=208LG9J82
             </div>
         </div>
 
-        <div class="alert alert-info mx-auto" role="alert">
-            <b> For more click on menu items 👇</b>
-        </div>
-
-        <div class="p-4 border  rounded">
-            <h4 class="font-italic">Menu</h4>
-            <ol class="list-unstyled mb-1 p-2">
-                <li><a class="dropdown-item border my-1 " href="th13.php">👉Th13 Bases</a> </li>
-                <li><a class="dropdown-item border my-1" href="th12.php">👉Th12 Bases</a></li>
-                <li><a class="dropdown-item border my-1" href="th11.php">👉Th11 Bases</a></li>
-                <li><a class="dropdown-item border my-1" href="th10.php">👉Th10 Bases</a></li>
-                <li><a class="dropdown-item border my-1" href="youtube.php">👉Our YouTube</a></li>
-
-            </ol>
-        </div>
+        <hr style="background: #000; height:1px; width:95%" class="my-4">
+       
 
         <div class="p-4">
             <h5 class="font-italic">Write to us </h5>

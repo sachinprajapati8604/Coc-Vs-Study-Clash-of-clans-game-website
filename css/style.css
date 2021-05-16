@@ -1,0 +1,160 @@
+.titlename{
+    font-weight: bold;
+     background: -webkit-linear-gradient(orange, #dfdfdf,yellow);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     
+   }
+   nav ul li a {
+     font-weight: bold;
+     font-size: 20px;
+     
+   }
+   nav ul li{
+     padding-inline-start: 20px;
+   }
+   .dropdown-menu a{
+     padding: 7px;
+   }
+   .dropdown-menu a:hover{
+    
+     color: #fff;
+     background-color: #343a40;
+   }
+.catimg {
+    width: 100%;
+    height: 200px;
+    padding: 5px;
+}
+
+/* slider css */
+.sliderimg img {
+    width: 100%;
+    height: 28rem;
+}
+
+.background {
+    background-repeat: no-repeat;
+    /*if you have full size image then use no-repeat*/
+    background-position: center center top;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+#th10{
+    background-image: linear-gradient(to right, #cf5e17, #9c4236);
+}
+#th11{
+    background-image: linear-gradient(to right, #bbba92, #653b2a);      
+}
+#th12{
+    background-image: linear-gradient(to right, #028ee3, #754500);
+}
+#th13{
+    background-image: linear-gradient(to right, #0b7fac, #6b4869);      
+}
+#th14{
+    background-image: linear-gradient(to right, #fcb157, #183729);
+}
+#search_background{
+    background-image: linear-gradient(to right, #6c5239,#a04d28);
+}
+
+
+.townhall{
+    background-color: #219d61;
+    color: #fff;
+    font-size: larger;
+    font-weight: 600;
+}
+.townhall h5{
+    text-transform: uppercase; 
+    letter-spacing: 2px;
+    font-size: 25px;
+    font-style: italic;
+}
+
+.head_of_basehandle{
+    padding: 10px;
+    background-color: #219d61;
+}
+
+/* footer  start*/
+.social-pet li {
+    display: inline-block;
+    margin-right: 10px;
+}
+.social-pet li a {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    text-align: center;
+    display: block;
+    line-height: 35px;
+    background-color: #3a5a95;
+    color: #fff;
+}
+.social-pet li:nth-child(2) a {
+    background-color: #57aced;
+}
+.social-pet li:nth-child(3) a {
+    background-color: #dd4f43;
+}
+.social-pet li:nth-child(4) a {
+    background-color: #6b27b2;
+}
+.social-pet li a:hover {
+    background-color: #0141a2;
+}
+.social-pet li a:hover i {
+    transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}
+.recent-post li {
+    display: block;
+    color: #ccc;
+    margin-bottom: 25px;
+}
+.recent-post li label {
+    float: left;
+    border: 2px solid #ccc;
+    padding: 1px 7px;
+    text-align: center;
+}
+.recent-post li label span {
+    color: #fff;
+}
+footer .input-group-addon {
+    background-color: #0141a2;
+    padding: 10px;
+}
+.f-address li {
+    display: inline-block;
+}
+.f-address li i {
+    color: #2995de;
+    font-size: 18px;
+}
+.f-address li a {
+    color: #ccc;
+}
+/*=-Copyright-=*/
+.copyright {
+    background-color: #111;
+    padding: 12px 0;
+font-size:14px;
+}
+
+/* footer end */
+
+@media(max-width:600px) {
+
+    /* slider css */
+    .sliderimg img {
+        width: 100%;
+        height: 22rem;
+    }
+
+}

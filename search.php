@@ -1,7 +1,6 @@
 <!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -10,20 +9,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
     <title>Coc Vs Study</title>
-    <link rel="shortcut icon" type="image/jpg" href="image/title.png" />
-    <style>
- #background {
-        background-image: radial-gradient( #cf5e17, #9c4236, #bbba92, #653b2a,#028ee3, #754500,#0b7fac, #6b4869,#fcb157, #183729);
-        background-repeat: no-repeat;
-        /*if you have full size image then use no-repeat*/
-        background-position: center center top;
-        background-size: cover;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-    }
-
-    </style>
+    <link rel="shortcut icon" type="image/jpg" href="image/queen1.png" />
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+   
 </head>
 
 <body>
@@ -33,17 +23,20 @@
     <div class="container my-3" >
         <?php
         $squery = $_GET['query'];
-        echo '<h3 class="font-italic py-2 text-center"> Search results for "<mark class="bg-warning">' . $squery . '</mark>" </h3> <hr> ';
+        echo '<h3 class="font-italic py-2 text-center"> Search results for "<mark class="bg-warning">' . $squery . '</mark>" </h3> <hr> 
+        <hr style="background: #000; height:1px; width:100%" class="my-4">
+        ';
         ?>
 
-        <div class="row" id="background">
+        <div class="row" class="background" id="search_background">
             <?php
             include 'dbconnect.php';
             $squery = $_GET['query'];
 
             $noresult = true;
 
-            $sql = " SELECT * FROM th13 WHERE (base_title = '$squery' OR base_desc = '$squery' OR base_address = '$squery' OR given_by = '$squery') UNION
+            $sql = " SELECT * FROM th14 WHERE (base_title = '$squery' OR base_desc = '$squery' OR base_address = '$squery' OR given_by = '$squery') UNION
+            SELECT * FROM th13 WHERE (base_title = '$squery' OR base_desc = '$squery' OR base_address = '$squery' OR given_by = '$squery') UNION
         SELECT * FROM th12 WHERE (base_title = '$squery' OR base_desc = '$squery' OR base_address = '$squery' OR given_by = '$squery') UNION
         SELECT * FROM th11 WHERE (base_title = '$squery' OR base_desc = '$squery' OR base_address = '$squery' OR given_by = '$squery') UNION
         SELECT * FROM th10 WHERE (base_title = '$squery' OR base_desc = '$squery' OR base_address = '$squery' OR given_by = '$squery')  ORDER BY created DESC";
@@ -54,14 +47,20 @@
                 $desc = $row['base_desc'];
                 $url = $row['base_address'];
                 $base_by = $row['given_by'];
-                   $creationdate=$row['created'];
+                $image_name = $row['image_name'];
+                $creationdate=$row['created'];
                 $time = strtotime($row['created']);   //this is a time from database
                 $TodayDate = strtotime(date('Y-m-d H:i:s'));  //Today date by date function
                 $dateDiff = ($TodayDate - $time) / 86400;      //taking date difference then converting into days by dividing 86400.
-              
+
+                if($image_name==""){
+                    $img=' <img src="data:image/jpeg;base64,' . base64_encode($row['imageData']) . '" class="card-img-top img-thumbnail ," alt="..." style="height:220px;">';
+                }else{
+                  $img=' <img src="image/'.$image_name.'" class="card-img-top img-thumbnail ," alt="..." style="height:220px;">';
+                }
                 echo ' <div class="card-deck my-2 col-md-4 mx-auto">
                 <div class="card">
-                <div class="simgdiv">     <img src="data:image/jpeg;base64,' . base64_encode($row['imageData']) . '" class="card-img-top img-thumbnail ," alt="..." style="height:220px;"> </div>
+                <div class="simgdiv"> '.$img.'    </div>
                   <div class="card-body">
                     <h5 class="card-title">' . $title . '</h5>
                     <p class="card-text"><strong> Base Discription :</strong>' . $desc . '</p>

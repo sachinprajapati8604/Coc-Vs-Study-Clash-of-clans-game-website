@@ -1,28 +1,4 @@
-<style>
-.titlename{
- font-weight: bold;
-  background: -webkit-linear-gradient(orange, #dfdfdf,yellow);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  
-}
-nav ul li a {
-  font-weight: bold;
-  font-size: 20px;
-  
-}
-nav ul li{
-  padding-inline-start: 20px;
-}
-.dropdown-menu a{
-  padding: 7px;
-}
-.dropdown-menu a:hover{
- 
-  color: #fff;
-  background-color: #343a40;
-}
-</style>
+
 <?php 
 
 echo '

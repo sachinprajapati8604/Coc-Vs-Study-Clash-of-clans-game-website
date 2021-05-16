@@ -1,38 +1,25 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
-</head>
-
-<body>
+    <title>Coc Vs Study</title>
+    <link rel="shortcut icon" type="image/jpg" href="image/queen1.png" />
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
 
     <?php
-    include 'starter.html';
     include 'header.php';
     include 'dbconnect.php';
 
     ?>
-    <style>
-        #background {
-            background-image: linear-gradient(to right, #fcb157, #183729);
-            background-repeat: no-repeat;
-            /*if you have full size image then use no-repeat*/
-            background-position: center center top;
-            background-size: cover;
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-        }
-
-        .catimg {
-            width: 100%;
-            height: 200px;
-            padding: 5px;
-        }
-    </style>
+    
 
     <!--card container -->
     <div class="container my-3">
@@ -51,7 +38,7 @@
     </div>
 
 
-    <div class="container" id="background">
+    <div class="container  background" id="th14">
         <div class="row">
             <?php
 
@@ -80,11 +67,13 @@
                 } else {
                     $srcfile = "image/$image_name";
                 }
+        
+               
                 echo '
                       <div class="col-md-4  my-2 ">
                           <div class="card h-100 mx-auto" style="width: 18rem;">
                               <img src='.$srcfile.' class="card-img-top catimg" alt="...">
-                              <div class="card-body">
+                              <div class="card-body ">
                               <p class="card-text">Base 👉#' . $id . ' </p>
                                   <h5 class="card-title">' . $title . '</h5>
 								  <p class="card-text">Discription ➡ ' . $desc . ' </p>
@@ -104,6 +93,10 @@
     </div>
 
     <?php include 'footer.php'; ?>
-</body>
-
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
 </html>
